@@ -225,7 +225,7 @@ html{
 .skills-container{
   display: flex;
 
-  justify-content: space-between;
+  justify-content: center;
 
   align-items: center;
 
@@ -271,7 +271,7 @@ html{
 /* RIGHT */
 
 .skill-card{
-  flex: 1;
+  width: 700px;
 
   background: #d9d9d9;
 
@@ -606,4 +606,19 @@ span{
 
 .contact-card span{
   color: #666;
+}
+@media(max-width:1000px){
+
+  .skills{
+    padding: 100px 20px;
+  }
+
+  .skills-container{
+    flex-direction: column;
+  }
+
+  .skill-card{
+    width: 100%;
+  }
+
 }
