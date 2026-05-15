@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Naphat Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Kanit:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+  <!-- background stars -->
+  <div class="stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- navbar -->
+  <nav>
+
+    <h2 class="logo">Naphat</h2>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- hero -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>
+        Frontend<br>
+        Developer
+      </h1>
+
+      <p>
+        Creating modern websites with clean design and smooth user experience.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- about -->
+  <section class="about" id="about">
+  
+
+    <div class="about-text">
+
+      <h2>About Me</h2>
+
+      <p>
+        สวัสดีครับผมชื่อ ชาร์ฟ ตอนนี้อายุ 14 ครับ
+       ผมชื่นชอบในการออกเเบบเว็บ 
+       <br>สนุกในการเขียนเว็บคอยนั่งเเก้ปัญหาอะไรต่างๆผมอยากจะเรียนรู้ในสิ่งใหม่ๆ 
+       <br>ผมอยากเป็น<span> DEVLOPER</span> ครับ 
+      </p>
+
+    </div>
+    <div class="img-about">
+
+        <img src="icons/a5db7eb7-652d-4524-8d95-908e3d89407a (2).png" width="80%">
+    </div>
+
+  </section >
+
+  <section class="skills" id="Skills">
+
+  <h2> Skills </h2>
+
+  <div class="skills-container">
+
+    <!-- LEFT -->
+
+    <div class="skill-buttons">
+
+      <button onclick="reactSkill()" class="active">
+        React 50%
+      </button>
+
+      <button onclick="nextSkill()">
+        Next.js 0%
+      </button>
+
+      <button onclick="htmlSkill()">
+        HTML+CSS 85%
+      </button>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="skill-card">
+
+      <h3 id="skill-title">
+        React
+      </h3>
+
+      <p class="percent" id="skill-percent">
+        ระดับความเชี่ยวชาญ 50%
+      </p>
+
+      <!-- progress -->
+
+      <div class="progress-bar">
+
+        <div class="progress" id="progress"></div>
+
+      </div>
+
+      <!-- info -->
+
+      <div class="skill-info" id="skill-info">
+
+        มีความรู้พื้นฐานด้าน component,
+        state และ props
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+
+const title =
+document.getElementById("skill-title");
+
+const percent =
+document.getElementById("skill-percent");
+
+const progress =
+document.getElementById("progress");
+
+const info =
+document.getElementById("skill-info");
+
+/* React */
+
+function reactSkill(){
+
+  title.innerHTML = "React";
+
+  percent.innerHTML =
+  "ระดับความเชี่ยวชาญ 50%";
+
+  progress.style.width = "50%";
+
+  info.innerHTML =
+  "มีความรู้พื้นฐานด้าน component, state และ props";
+
+}
+
+/* Next */
+
+function nextSkill(){
+
+  title.innerHTML = "Next.js";
+
+  percent.innerHTML =
+  "ระดับความเชี่ยวชาญ 0%";
+
+  progress.style.width = "0%";
+
+  info.innerHTML =
+  "กำลังศึกษา Next.js";
+
+}
+
+/* HTML CSS */
+
+function htmlSkill(){
+
+  title.innerHTML = "HTML + CSS";
+
+  percent.innerHTML =
+  "ระดับความเชี่ยวชาญ 85%";
+
+  progress.style.width = "85%";
+
+  info.innerHTML =
+  "มีความเข้าใจด้าน layout, flexbox และ responsive design";
+
+}
+
+</script>
+
+  <!-- projects -->
+  <section class="projects" id="projects">
+
+    <h2>Performance</h2>
+
+    <p class="project-desc">
+      นี่คือผลงานของผมครับที่ผมเรียนรู้นอกห้องเรียน เเละใช้สกิลต่างๆครับ
+    </p>
+
+    <div class="project-grid">
+
+      <!-- card -->
+      <div class="card">
+
+        <img src="https://picsum.photos/500/300?1" alt="">
+
+        <h3>Portfolio Website</h3>
+
+        <p>
+         เป็นเว็บไซต์ที่ดูเรียบง่ายสะอาดตา
+        </p>
+
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <a href="" target="_blank">View Project</a>
+
+      </div>
+
+      <!-- card -->
+      <div class="card">
+
+        <img src="icons/image.png" alt="">
+
+        <h3>Cpac Nakhonsawan</h3>
+
+        <p>
+          เป็นเว็บที่ดูเรียบง่ายเเต่ดูเเพงไปด้วย
+        </p>
+
+        <div class="tags">
+          <span>Frontend</span>
+          <span>UI Design</span>
+          <span>Responsive</span>
+        </div>
+
+        <a href="https://cpac-nakhonsawan.com/" target="_blank">View Project</a>
+
+      </div>
+
+      <!-- card -->
+      <div class="card">
+
+        <img src="/icons/image2.png" alt="">
+
+        <h3>Landing Page</h3>
+
+        <p>
+          เป็นเว็บที่ผมลองทำขึ้นมาครับ
+        </p>
+
+        <div class="tags">
+          <span>Landing</span>
+          <span>Modern UI</span>
+          <span>Design</span>
+        </div>
+
+        <a href="https://candid-travesseiro-153416.netlify.app/#main" target="_blank">View Project</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+
+  <h2>Contact</h2>
+
+  <p class="contact-desc">
+    สนใจติดต่องานสามารภทักมาพูดคุยปรึกษาได้ครับ
+  </p>
+
+  <div class="contact-box">
+
+    <a href="" class="contact-card">
+
+      <h3>Discord</h3>
+
+      <span>nxphat_999</span>
+
+    </a>
+
+    <a href="" class="contact-card">
+
+      <h3>Facebook</h3>
+
+      <span>Naphat Meesueathong</span>
+
+    </a>
+
+    <a href="" class="contact-card">
+
+      <h3>Instagram</h3>
+
+      <span>shxrpnxphat</span>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+</body>
+</html>
